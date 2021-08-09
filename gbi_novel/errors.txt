@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 62: expected statement.
+    "どのような属性でも、\n " + yname + "ならきっと、素晴らしい魔法使いになれるわ！！"
+                    ^
+
+Ren'Py Version: Ren'Py 7.4.5.1648
+Sun Aug  8 21:58:11 2021

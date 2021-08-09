@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 64, in script
+    with Fade(0.5, 4.0, 10.0, 3.0)
+TypeError: Fade() got multiple values for keyword argument 'old_widget'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 64, in script
+    with Fade(0.5, 4.0, 10.0, 3.0)
+  File "/Users/madare/Desktop/renpy-7.4.5-sdk/renpy/ast.py", line 1397, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "/Users/madare/Desktop/renpy-7.4.5-sdk/renpy/exports.py", line 1682, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/Users/madare/Desktop/renpy-7.4.5-sdk/renpy/display/core.py", line 2663, in do_with
+    clear=clear)
+  File "/Users/madare/Desktop/renpy-7.4.5-sdk/renpy/display/core.py", line 3213, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "/Users/madare/Desktop/renpy-7.4.5-sdk/renpy/display/core.py", line 3570, in interact_core
+    new_widget=layers_root)
+  File "/Users/madare/Desktop/renpy-7.4.5-sdk/renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+TypeError: Fade() got multiple values for keyword argument 'old_widget'
+
+Darwin-20.5.0-x86_64-i386-64bit
+Ren'Py 7.4.5.1648
+gbi_novel 1.0
+Sun Aug  8 19:14:49 2021
